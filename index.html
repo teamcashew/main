@@ -3,40 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Cashew - From Nuts to Legends</title>
-
-    <!-- Meta Tags for SEO and Social Sharing -->
-    <meta name="description" content="Team Cashew is a passionate indie game studio from Brazil's Paraíba Valley, forging interactive art and unforgettable gaming legends.">
-    <meta name="keywords" content="indie game, game developer, Team Cashew, Stone Lotus, Brazil, São Paulo, interactive art">
+    <title>Team Cashew - Indie Game Studio Crafting Interactive Art</title>
     
-    <!-- Favicon using the provided SVG (encoded as a Data URI) -->
+    <meta name="description" content="Team Cashew is a passionate indie game studio from Brazil's Paraíba Valley, forging interactive art and unforgettable gaming legends. Discover our quest.">
+    <meta name="keywords" content="indie game, game developer, Team Cashew, Stone Lotus, Brazil, São Paulo, interactive art, game studio">
+    <meta name="author" content="Team Cashew">
+    <link rel="canonical" href="https://teamcashew.github.io/main/">
+
+    <meta property="og:title" content="Team Cashew - From Nuts to Legends">
+    <meta property="og:description" content="A passionate indie game studio from Brazil's Paraíba Valley, forging interactive art and unforgettable gaming legends.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://teamcashew.github.io/main/">
+    <meta property="og:image" content="https://teamcashew.github.io/main/assets/social-preview.jpg">
+    <meta property="og:site_name" content="Team Cashew">
+    <meta property="og:locale" content="en_US">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Team Cashew - From Nuts to Legends">
+    <meta name="twitter:description" content="A passionate indie game studio from Brazil's Paraíba Valley, forging interactive art and unforgettable gaming legends.">
+    <meta name="twitter:image" content="https://teamcashew.github.io/main/assets/social-preview.jpg">
+    
     <link rel="icon" href="data:image/svg+xml,%3Csvg width='150' height='240' viewBox='0 0 150 240' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='cashew-fruit-illustration'%3E%3Cg id='cashew-nut'%3E%3Cpath d='M 68,180 C 40,184 38,225 65,222 C 95,218 102,195 85,182 Z' fill='%237C8A70'/%3E%3Cpath d='M 85,182 C 90,195 80,210 68,218 C 75,200 80,190 85,182 Z' fill='%235E6955'/%3E%3Cpath d='M 69,186 C 60,192 58,205 66,212 C 72,204 75,192 69,186 Z' fill='%239EAC94'/%3E%3C/g%3E%3Cg id='cashew-apple'%3E%3Cpath d='M 75,20 C 15,35 0,90 50,182 C 60,190 90,190 100,182 C 150,100 135,35 75,20 Z' fill='%23D94A27'/%3E%3Cpath d='M 100,182 C 130,120 120,70 95,45 C 90,80 90,140 100,182 Z' fill='%23A6341A'/%3E%3Cpath d='M 68,180 C 70,185 80,185 85,182 C 80,175 70,175 68,180 Z' fill='%236B2815'/%3E%3Cpath d='M 55,60 C 75,65 85,100 70,125 C 50,110 40,80 55,60 Z' fill='%23F7B733'/%3E%3C/g%3E%3Cg id='top-details'%3E%3Cpath d='M 75,20 C 68,28 64,15 75,12 C 86,15 82,28 75,20 Z' fill='%234A3F35'/%3E%3Cpath d='M 75,20 C 78,25 80,22 75,12 C 73,16 73,18 75,20 Z' fill='%23302923'/%3E%3Cpath d='M 100,90 a 3,2.5 0 1,1 -6,0 a 3,2.5 0 1,1 6,0' fill='%236B2815' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
 
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-
-    <!-- AOS (Animate on Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Alpine.js (for interactivity) -->
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Team Cashew",
+      "url": "https://teamcashew.github.io/main/",
+      "logo": "https://teamcashew.github.io/main/assets/logo.svg",
+      "description": "Team Cashew is a passionate indie game studio from Brazil's Paraíba Valley, forging interactive art and unforgettable gaming legends.",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "Paraíba Valley, São Paulo, Brazil"
+      },
+      "knowsAbout": ["Game Development", "Interactive Art", "Indie Games"],
+      "sameAs": []
+    }
+    </script>
+    
     <style>
-        /* **NEW** Custom CSS with a warm, SVG-inspired color palette */
         :root {
-            --bg-dark: #1c1917; /* Tailwind stone-900 */
-            --bg-medium: #292524; /* Tailwind stone-800 */
-            --text-light: #e7e5e4; /* Tailwind stone-200 */
-            --accent-primary: #f59e0b; /* Tailwind amber-500 */
-            --accent-secondary: #f97316; /* Tailwind orange-500 */
+            --bg-dark: #1c1917;
+            --bg-medium: #292524;
+            --text-light: #e7e5e4;
+            --accent-primary: #f59e0b;
+            --accent-secondary: #f97316;
         }
         body {
             font-family: 'Montserrat', sans-serif;
@@ -53,22 +73,19 @@
 </head>
 <body class="antialiased">
 
-    <!-- Header & Navigation -->
     <header class="bg-black/30 backdrop-blur-md fixed top-0 left-0 right-0 z-50" x-data="{ isOpen: false }">
         <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <a href="#" class="flex items-center text-2xl font-bold font-display text-white hover:opacity-80 transition-opacity">
+            <a href="https://teamcashew.github.io/main/" class="flex items-center text-2xl font-bold font-display text-white hover:opacity-80 transition-opacity">
                 <svg class="h-10 w-auto mr-3" viewBox="0 0 150 240" xmlns="http://www.w3.org/2000/svg"><g id="cashew-fruit-illustration"><g id="cashew-nut"><path d="M 68,180 C 40,184 38,225 65,222 C 95,218 102,195 85,182 Z" fill="#7C8A70"/><path d="M 85,182 C 90,195 80,210 68,218 C 75,200 80,190 85,182 Z" fill="#5E6955"/><path d="M 69,186 C 60,192 58,205 66,212 C 72,204 75,192 69,186 Z" fill="#9EAC94"/></g><g id="cashew-apple"><path d="M 75,20 C 15,35 0,90 50,182 C 60,190 90,190 100,182 C 150,100 135,35 75,20 Z" fill="#D94A27"/><path d="M 100,182 C 130,120 120,70 95,45 C 90,80 90,140 100,182 Z" fill="#A6341A"/><path d="M 68,180 C 70,185 80,185 85,182 C 80,175 70,175 68,180 Z" fill="#6B2815"/><path d="M 55,60 C 75,65 85,100 70,125 C 50,110 40,80 55,60 Z" fill="#F7B733"/></g><g id="top-details"><path d="M 75,20 C 68,28 64,15 75,12 C 86,15 82,28 75,20 Z" fill="#4A3F35"/><path d="M 75,20 C 78,25 80,22 75,12 C 73,16 73,18 75,20 Z" fill="#302923"/><path d="M 100,90 a 3,2.5 0 1,1 -6,0 a 3,2.5 0 1,1 6,0" fill="#6B2815" /></g></g></svg>
                 <span>Team Cashew</span>
             </a>
 
-            <!-- Desktop Nav -->
             <nav class="hidden md:flex space-x-8 text-lg">
                 <a href="#about" class="hover:text-amber-400 transition-colors">Our Manifesto</a>
                 <a href="#team" class="hover:text-amber-400 transition-colors">The Fellowship</a>
                 <a href="#games" class="hover:text-amber-400 transition-colors">Our Legends</a>
             </nav>
 
-            <!-- Mobile Menu Button -->
             <div class="md:hidden">
                 <button @click="isOpen = !isOpen" class="text-white focus:outline-none">
                     <i class="fa-solid fa-bars text-2xl" x-show="!isOpen"></i>
@@ -77,7 +94,6 @@
             </div>
         </div>
 
-        <!-- Mobile Menu -->
         <div x-show="isOpen" @click.away="isOpen = false" class="md:hidden bg-stone-900/90 py-4">
             <a href="#about" class="block text-center py-2 px-4 text-lg hover:bg-amber-500/20 transition">Our Manifesto</a>
             <a href="#team" class="block text-center py-2 px-4 text-lg hover:bg-amber-500/20 transition">The Fellowship</a>
@@ -86,7 +102,6 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
         <section id="hero" class="min-h-screen flex items-center justify-center bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=2071&auto=format&fit=crop');">
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative text-center text-white p-6" data-aos="zoom-in">
@@ -94,13 +109,12 @@
                 <p class="text-2xl md:text-4xl mt-4 font-light tracking-wider">From Nuts to Legends</p>
             </div>
             <div class="absolute bottom-10 text-white animate-bounce">
-                <a href="#about">
+                <a href="#about" aria-label="Scroll to About section">
                     <i class="fa-solid fa-chevron-down text-3xl"></i>
                 </a>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="py-24 bg-stone-800">
             <div class="container mx-auto px-6 text-center">
                 <div data-aos="fade-up">
@@ -113,7 +127,6 @@
             </div>
         </section>
 
-        <!-- The Team Section -->
         <section id="team" class="py-24 bg-stone-900">
             <div class="container mx-auto px-6">
                 <div class="text-center" data-aos="fade-up">
@@ -122,7 +135,6 @@
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    <!-- Júlia Klee Card -->
                     <div class="bg-stone-800/50 rounded-xl shadow-2xl p-8 text-center border border-stone-700 transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="100">
                         <i class="fas fa-hat-wizard text-6xl text-amber-400 mb-4"></i>
                         <h3 class="text-3xl font-bold font-display text-white">Júlia Klee</h3>
@@ -132,7 +144,6 @@
                         </p>
                     </div>
 
-                    <!-- Melissa Melo Card -->
                     <div class="bg-stone-800/50 rounded-xl shadow-2xl p-8 text-center border border-stone-700 transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-anchor text-6xl text-amber-400 mb-4"></i>
                         <h3 class="text-3xl font-bold font-display text-white">Melissa Melo</h3>
@@ -142,7 +153,6 @@
                         </p>
                     </div>
 
-                    <!-- Marley Card -->
                     <div class="bg-stone-800/50 rounded-xl shadow-2xl p-8 text-center border border-stone-700 transform hover:-translate-y-2 transition-transform duration-300" data-aos="fade-up" data-aos-delay="300">
                         <i class="fas fa-paw text-6xl text-amber-400 mb-4"></i>
                         <h3 class="text-3xl font-bold font-display text-white">Marley</h3>
@@ -155,7 +165,6 @@
             </div>
         </section>
 
-        <!-- Games Section -->
         <section id="games" class="py-24 bg-stone-800">
             <div class="container mx-auto px-6">
                 <div class="text-center" data-aos="fade-up">
@@ -176,7 +185,6 @@
             </div>
         </section>
         
-        <!-- Social/Contact Section -->
         <section id="contact" class="py-24 bg-stone-900">
             <div class="container mx-auto px-6 text-center">
                 <div data-aos="fade-up">
@@ -194,7 +202,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="bg-stone-800 border-t border-stone-700 py-8">
         <div class="container mx-auto px-6 text-center text-stone-400">
             <p>&copy; <span id="current-year"></span> Team Cashew. All Rights Reserved.</p>
@@ -209,10 +216,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-            duration: 800, 
-            once: true, 
+            duration: 800,
+            once: true,
         });
-
         document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
